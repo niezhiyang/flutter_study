@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './demo/ScaffoldDemo.dart';
 import './demo/ScaffoldStateDemo.dart';
 import './demo/BarDemo.dart';
+import './demo/SliverAppBarDemo.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BarDemo(),
+      home: SliverAppBarDemo(),
     );
   }
 }
