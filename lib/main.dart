@@ -3,6 +3,7 @@ import './demo/ScaffoldDemo.dart';
 import './demo/ScaffoldStateDemo.dart';
 import './demo/BarDemo.dart';
 import './demo/SliverAppBarDemo.dart';
+import './demo/TextDemo.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,13 +12,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SliverAppBarDemo(),
+//      home: TextDemo(),
+      home: Scaffold(body: TextDemo(),appBar: AppBar(),),
     );
   }
 }
+
+
 
 
