@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 //      home: TextDemo(),
-      home: TextStyleDemo(),
+      home: TextRichDemo(),
     );
   }
 }

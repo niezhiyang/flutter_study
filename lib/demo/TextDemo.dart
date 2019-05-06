@@ -4,58 +4,134 @@ class TextDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(
-        color: Colors.red,
-        width: 200,
-        height: 200,
-        child: Column(
-          children: <Widget>[
-            Text(
-              "1234561222222222222222222222222222333222ssssssssssssssssss",
-              textAlign: TextAlign.left,
-              // 对齐方式
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("TextRich"),
+        ),
+        body: Container(
+            color: Colors.red,
+            width: 200,
+            height: 200,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "1234561222222222222222222222222222333222ssssssssssssssssss",
+                  textAlign: TextAlign.left,
+                  // 对齐方式
 //            textDirection: TextDirection.ltr, // 文本流向
-              softWrap: false,
-              // 是否允许换行 ， 如果设置了 maxLines 此属性失效
-              overflow: TextOverflow.ellipsis,
-              // 文本的截断方式
-              // TextOverflow.ellipsis 以三个点结尾 ，
-              // TextOverflow.clip（默认的截断方式）强制截断，没有任何商量
-              //  TextOverflow.fade 褪色的截断
-              textScaleFactor: 2,
-              // 放大比例（估计一般用不到，一般直接设置 style 来设置 大小
-              maxLines: 3,
-              // 最大的行数
+                  softWrap: false,
+                  // 是否允许换行 ， 如果设置了 maxLines 此属性失效
+                  overflow: TextOverflow.ellipsis,
+                  // 文本的截断方式
+                  // TextOverflow.ellipsis 以三个点结尾 ，
+                  // TextOverflow.clip（默认的截断方式）强制截断，没有任何商量
+                  //  TextOverflow.fade 褪色的截断
+                  textScaleFactor: 2,
+                  // 放大比例（估计一般用不到，一般直接设置 style 来设置 大小
+                  maxLines: 3,
+                  // 最大的行数
 //            semanticsLabel: "adfadsfasdf", (暂时不知道什么用)
-              style: TextStyle(
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.black,
-                  decorationStyle: TextDecorationStyle.dotted),
-            ),
-            Text(
-              "1234561222222222222222222222222222333222ssssssssssssssssss",
-              textAlign: TextAlign.left,
-              // 对齐方式
+                  style: TextStyle(
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.black,
+                      decorationStyle: TextDecorationStyle.dotted),
+                ),
+                Text(
+                  "1234561222222222222222222222222222333222ssssssssssssssssss",
+                  textAlign: TextAlign.left,
+                  // 对齐方式
 //            textDirection: TextDirection.ltr, // 文本流向
-              softWrap: false,
-              // 是否允许换行 ， 如果设置了 maxLines 此属性失效
-              overflow: TextOverflow.ellipsis,
-              // 文本的截断方式
-              // TextOverflow.ellipsis 以三个点结尾 ，
-              // TextOverflow.clip（默认的截断方式）强制截断，没有任何商量
-              //  TextOverflow.fade 褪色的截断
-              textScaleFactor: 2,
-              // 放大比例（估计一般用不到，一般直接设置 style 来设置 大小
-              maxLines: 3,
-              // 最大的行数
+                  softWrap: false,
+                  // 是否允许换行 ， 如果设置了 maxLines 此属性失效
+                  overflow: TextOverflow.ellipsis,
+                  // 文本的截断方式
+                  // TextOverflow.ellipsis 以三个点结尾 ，
+                  // TextOverflow.clip（默认的截断方式）强制截断，没有任何商量
+                  //  TextOverflow.fade 褪色的截断
+                  textScaleFactor: 2,
+                  // 放大比例（估计一般用不到，一般直接设置 style 来设置 大小
+                  maxLines: 3,
+                  // 最大的行数
 //            semanticsLabel: "adfadsfasdf", (暂时不知道什么用)
-              style: TextStyle(
-                  color: Colors.blue,
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.black,
-                  decorationStyle: TextDecorationStyle.dashed),
-            )
-          ],
+                  style: TextStyle(
+                      color: Colors.blue,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.black,
+                      decorationStyle: TextDecorationStyle.dashed),
+                )
+              ],
+            )));
+  }
+}
+
+class TextRichDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("TextRich"),
+        ),
+        body: Center(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text.rich(
+                TextSpan(
+                    // 必须设置一个父TextStyle 否则 字体是白色
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                    text: "Text.rich 实现：      ",
+                    children: <TextSpan>[
+                      TextSpan(
+                          text: '绚丽',
+                          style: TextStyle(
+                              color: Colors.red,
+                              fontWeight: FontWeight.normal)),
+                      TextSpan(
+                          text: '文本',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                          )),
+                      TextSpan(
+                          text: '样式',
+                          style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              color: Colors.black,
+                              fontSize: 18,
+                              decoration: TextDecoration.lineThrough,
+                              fontWeight: FontWeight.normal)),
+                    ]),
+                style: TextStyle(height: 2),
+              ),
+              RichText(
+                  text: TextSpan(
+                // 必须设置一个父TextStyle 否则 字体是白色
+                style:
+                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                text: "RichText 实现：      ",
+                children: <TextSpan>[
+                  TextSpan(
+                      text: '绚丽',
+                      style: TextStyle(
+                          color: Colors.red, fontWeight: FontWeight.normal)),
+                  TextSpan(
+                      text: '文本',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.blue)),
+                  TextSpan(
+                      text: '样式',
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic,
+                          color: Colors.black,
+                          fontSize: 18,
+                          decoration: TextDecoration.lineThrough,
+                          fontWeight: FontWeight.normal)),
+                ],
+              ))
+            ],
+          ),
         ));
   }
 }
@@ -69,7 +145,10 @@ class TextStyleDemo extends StatelessWidget {
     paintRed.color = Colors.red;
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: Text("TextStyle"),centerTitle: true,),
+      appBar: AppBar(
+        title: Text("TextStyle"),
+        centerTitle: true,
+      ),
       body: Padding(
           padding: EdgeInsets.all(20),
           child: Column(
@@ -88,12 +167,12 @@ class TextStyleDemo extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
                   Text(
-                    "FontWeight.w400(默认)",
-                    style: TextStyle(fontWeight: FontWeight.w400),
+                    "FontWeight.normal == FontWeight.w400",
+                    style: TextStyle(fontWeight: FontWeight.normal),
                   ),
                   Text(
-                    "FontWeight.w700(正常加粗)",
-                    style: TextStyle(fontWeight: FontWeight.w700),
+                    "FontWeight.bold == FontWeight.w700(正常加粗)",
+                    style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],
               ),

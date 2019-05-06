@@ -1,6 +1,6 @@
 ## 一。   **Text**
 **flutter控件练习demo地址**：[github](https://github.com/niezhiyang/flutter_study)
-### 1.1 **简介**
+### 1.1 **Text简介**
 > **Text：** 单一格式的文本 使用比较多的 ， 相当于 android 中的TextView
 
 ### 1.2 **基本属性**
@@ -53,10 +53,92 @@ class TextDemo extends StatelessWidget {
   }
 }
 ```
-## 二。   **TextStyle**
+## 二 **RichText 和 Text.rich**
+### 1.1 **Text简介**
+> **RichText Text.rich：** 可以做出多种样式的文本绚丽多彩， 相当于 android 中的SpannableString
+### 2.1 说明
+    Text.rich 和 Text 源码都是通过  RichText 实现的
+### 2.2 demo图片
+<img src="https://user-gold-cdn.xitu.io/2019/5/6/16a8bba9c197bad0?w=1065&h=462&f=jpeg&s=71938" width="400" hegiht="200" align=center />
+
+### demo代码
+```
+class TextRichDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("TextRich"),
+        ),
+        body: Center(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text.rich(
+                TextSpan(
+                    // 必须设置一个父TextStyle 否则 字体是白色
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                    text: "Text.rich 实现：      ",
+                    children: <TextSpan>[
+                      TextSpan(
+                          text: '绚丽',
+                          style: TextStyle(
+                              color: Colors.red,
+                              fontWeight: FontWeight.normal)),
+                      TextSpan(
+                          text: '文本',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                          )),
+                      TextSpan(
+                          text: '样式',
+                          style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              color: Colors.black,
+                              fontSize: 18,
+                              decoration: TextDecoration.lineThrough,
+                              fontWeight: FontWeight.normal)),
+                    ]),
+                style: TextStyle(height: 2),
+              ),
+              RichText(
+                  text: TextSpan(
+                // 必须设置一个父TextStyle 否则 字体是白色
+                style:
+                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                text: "RichText 实现：      ",
+                children: <TextSpan>[
+                  TextSpan(
+                      text: '绚丽',
+                      style: TextStyle(
+                          color: Colors.red, fontWeight: FontWeight.normal)),
+                  TextSpan(
+                      text: '文本',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.blue)),
+                  TextSpan(
+                      text: '样式',
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic,
+                          color: Colors.black,
+                          fontSize: 18,
+                          decoration: TextDecoration.lineThrough,
+                          fontWeight: FontWeight.normal)),
+                ],
+              ))
+            ],
+          ),
+        ));
+  }
+}
+```
+## 三。   **TextStyle**
 > Text 的 样式
 
-### 2.1 主要属性
+### 3.1 主要属性
 - **inherit = true**  默认样式会继承层级最为接近的 **DefaultTextStyle**，为true 表示继承，false 表示完全重写
 - **color** 字体颜色，注意： 如果有特殊的foreground，此值必须是null
 - **fontSize** 字体大小 默认的是 14
@@ -84,10 +166,10 @@ class TextDemo extends StatelessWidget {
     - TextDecorationStyle.dashed  虚线（一个长方形一个长方形的线）
     - TextDecorationStyle.wavy 正玄曲线
 - **debugLabel** 只在调试的使用
-### 2.2 图片
+### 3.2 图片
 
 ![](https://user-gold-cdn.xitu.io/2019/5/6/16a8b3acd82e856c?w=1080&h=2034&f=jpeg&s=824002)
-### 2.3 代码demo
+### 3.3 代码demo
 ```
 class TextStyleDemo extends StatelessWidget {
   @override
