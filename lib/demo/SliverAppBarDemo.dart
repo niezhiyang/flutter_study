@@ -49,7 +49,7 @@ class SliverAppBarDemo extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           shrinkWrap: true,
           itemBuilder: (BuildContext context, int index) {
-            if (index.isOdd) return new Divider();
+            if (index.isOdd) return  Divider();
             return ListItem(index/2);
           },
           itemCount: 40,
