@@ -5,6 +5,7 @@ import './demo/BarDemo.dart';
 import './demo/SliverAppBarDemo.dart';
 import './demo/TextDemo.dart';
 import './demo/TextFieldDemo.dart';
+import './demo/Button.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 //      home: TextDemo(),
-      home: TextFieldDemo(),
+      home: RaiseButtonDemo(),
     );
   }
 }
