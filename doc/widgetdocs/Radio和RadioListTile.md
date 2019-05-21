@@ -6,6 +6,12 @@
 - **onChanged：** 当选择此 radio 的时候 的回调。 参数就是 此 value 的值
 - **groupValue：** 如果 Radio 的 value 和 groupValue 一样 就 是此 Radio 选中 其他 设置为 不选中
 - **activeColor：** 选中的颜色
+## 二、RadioListTile(dan)
+### 2.1 属性
+- **value：** 此 Radio 的 value 值
+- **onChanged：** 当选择此 radio 的时候 的回调。 参数就是 此 value 的值
+- **groupValue：** 如果 Radio 的 value 和 groupValue 一样 就 是此 Radio 选中 其他 设置为 不选中
+- **activeColor：** 选中的颜色
 - **title：** 标题， 具有代表性的就是 Text
 - **subtitle：** 副标题（在 title 下面）， 具有代表性的就是 Text
 - **isThreeLine = false：**// 是否是三行文本
@@ -18,7 +24,7 @@
     - ListTileControlAffinity.platform 根据不同的平台，来显示 对话框 的位置
     - ListTileControlAffinity.trailing：勾选在右，title 在中，secondary 在左
     - ListTileControlAffinity.leading ：勾选在左，title 在中，secondary 在右
-    
+   
 ## 1.2 demo图片
 <img src="https://user-gold-cdn.xitu.io/2019/5/21/16ad9003b50e7859?w=320&h=640&f=gif&s=497249" width="200" hegiht="180" align=center />
 
