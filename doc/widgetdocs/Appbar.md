@@ -26,7 +26,7 @@ AppBar 主要属性：
 - **bottomOpacity** = 1.0  bottom的透明度
 ### 1.3 **图片**
 
-<img src="https://user-gold-cdn.xitu.io/2019/4/26/16a58f37ec176910?w=1080&h=2034&f=png&s=403348" width="200" hegiht="200" align=center />
+![](https://user-gold-cdn.xitu.io/2019/4/26/16a58f37ec176910?w=1080&h=2034&f=png&s=403348)
 
 ### 1.4 **demo**
 
