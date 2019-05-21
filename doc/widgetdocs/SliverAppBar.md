@@ -21,12 +21,12 @@
 
 ### 1.3 图片
 ####  当 pinned = true 的时候
+![](https://user-gold-cdn.xitu.io/2019/4/29/16a6868291030258?w=320&h=640&f=gif&s=607575)
 
-<img src="https://user-gold-cdn.xitu.io/2019/4/29/16a6868291030258?w=320&h=640&f=gif&s=607575" width="200" hegiht="200" align=center />
 
 ####  当 pinned = false 的时候
+![](https://user-gold-cdn.xitu.io/2019/4/29/16a6869e0256ba17?w=320&h=640&f=gif&s=550599)
 
-<img src="https://user-gold-cdn.xitu.io/2019/4/29/16a6869e0256ba17?w=320&h=640&f=gif&s=550599" width="200" hegiht="200" align=center />
 
 ### 1.4 demo
 ```

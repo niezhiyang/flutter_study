@@ -24,7 +24,8 @@
 #### 1.2.2 不常用属性
 - **focusNode** 控制焦点的
 - **textInputAction**软键盘里面显示的样式（软键盘的功能键）。比如 TextInputAction.go（开始） TextInputAction.search（搜索）TextInputAction.next（下一步）<br>
-<img src="https://user-gold-cdn.xitu.io/2019/5/7/16a9210a4763a7b6?w=970&h=627&f=png&s=75322" width="200" hegiht="150" align=center />
+
+![](https://user-gold-cdn.xitu.io/2019/5/7/16a9210a4763a7b6?w=970&h=627&f=png&s=75322)
 
 - **onEditingComplete** 当点击软键盘里面的（软键盘的功能键） 下一步 或者 搜索 或者 开始 等等的时候
 - **onSubmitted**  当点击软键盘里面的（软键盘的功能键） 下一步 或者 搜索 或者 开始 等等的时候  参数是 String 也就是 TextField 的文本<br>

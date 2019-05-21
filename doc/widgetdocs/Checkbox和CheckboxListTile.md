@@ -29,7 +29,8 @@
     - ListTileControlAffinity.leading ：勾选在左，title 在中，secondary 在右
 ### 三 实例截图
 
-<img src="https://user-gold-cdn.xitu.io/2019/5/20/16ad50e890ad42b9?w=320&h=640&f=gif&s=539858" width="200" hegiht="180" align=center />
+![](https://user-gold-cdn.xitu.io/2019/5/20/16ad50e890ad42b9?w=320&h=640&f=gif&s=539858)
+
 
 ### 四 代码
 

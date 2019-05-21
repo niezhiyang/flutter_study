@@ -26,7 +26,8 @@
     - ListTileControlAffinity.leading ：勾选在左，title 在中，secondary 在右
    
 ## 1.2 demo图片
-<img src="https://user-gold-cdn.xitu.io/2019/5/21/16ad9003b50e7859?w=320&h=640&f=gif&s=497249" width="200" hegiht="180" align=center />
+
+![](https://user-gold-cdn.xitu.io/2019/5/21/16ad9003b50e7859?w=320&h=640&f=gif&s=497249)
 
 ### 1.3 代码
 **注意点** RadioListTile 的父控件 不能选择Row （暂时不知道为什么），demo中选的是  Column
