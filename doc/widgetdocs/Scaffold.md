@@ -1,11 +1,12 @@
-### **简介**
+**flutter控件练习demo地址**：[github](https://github.com/niezhiyang/flutter_study)
+### 1. **简介**
 > Scaffold 实现了基本的Material Design布局结构
 
 在Material设计中定义的单个界面上的各种布局元素，在 Scaffold 中都有支持，比如 左边栏（Drawers）、snack bars、以及 （底部弹窗）bottom sheets。(底部导航栏)BottomNavigationBar
 
 
 
-### **基本用法**
+### 2. **基本用法**
 
 Scaffold 有下面几个主要属性：
 
@@ -32,8 +33,9 @@ Scaffold 有下面几个主要属性：
 - persistentFooterButtons：固定在下方显示的按钮，比如对话框下方的确定、取消按钮 (基本上没用)
 
 - resizeToAvoidBottomPadding：控制界面内容 body 是否重新布局来避免底部被覆盖了，比如当键盘显示的时候，重新布局避免被键盘盖住内容。默认值为 true。
-
-### **Demo**
+### 3. **Demo图片**
+![](https://user-gold-cdn.xitu.io/2019/5/21/16ad937e5ec71649?w=320&h=640&f=gif&s=1063210)
+### 4. **Demo**
 ```
 import 'package:flutter/material.dart';
 
