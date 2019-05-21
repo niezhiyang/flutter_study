@@ -8,4 +8,5 @@
 -  [Button](/doc/widgetdocs/Button.md)
 -  [Checkbox和CheckboxListTile](/doc/widgetdocs/Checkbox和CheckboxListTile.md)
 -  [Radio和RadioListTile](/doc/widgetdocs/Radio和RadioListTile.md)
+-  [Switch和SwitchListTile](/doc/widgetdocs/Switch和SwitchListTile.md)
  
