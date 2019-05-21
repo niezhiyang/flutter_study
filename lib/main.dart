@@ -8,6 +8,7 @@ import './demo/TextFieldDemo.dart';
 import './demo/Button.dart';
 import './demo/CheckBoxDemo.dart';
 import './demo/RadioDemo.dart';
+import './demo/SwitchDemo.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 //      home: TextDemo(),
-      home: RaiseButtonDemo(),
+      home: SwitchDemo(),
     );
   }
 }
