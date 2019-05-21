@@ -21,13 +21,16 @@
 **注意点** 在这里无效 在它子类有效（RaisedButton ，FlatButton ，OutlineButton ）
 - **color:**  // 当是 enable （onpress != null） 背景色
 - **disabledColor:** //onpress = null 的时候的颜色（不知道为什么测试不管用）<br>
+
 **注意点** 在这里无效 在它子类有效（RaisedButton ，FlatButton ，OutlineButton ）
+
 - **highlightColor:** 当用户 按下高亮时 的颜色
 - **elevation:**  Z轴阴影 默认是2 ，当 enable 的时候的阴影
 - **highlightElevation:** 高亮时的阴影 默认是 8  button 被按下的时候
 - **disabledElevation:** 当 disabled （onpress = null） 的阴影   默认是0 ，测试的时候 阴影还是 为0.0,也就是说不管用
 <br>
-**注意点** 在这里无效 在它子类有效（RaisedButton ，FlatButton ，OutlineButton ）
+ **注意点** 在这里无效 在它子类有效（RaisedButton ，FlatButton ，OutlineButton ）
+
 - **minWidth:** 最小的宽度 默认是 88 。 在 ButtonTheme 规定的
 - **height:**  高度， 默认是 36 也是在 ButtonTheme 规定的
 - **child:** 包括的子控件
