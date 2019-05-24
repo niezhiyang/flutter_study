@@ -1,5 +1,5 @@
 # flutter_study
-## 1. 布局
+## 1. 布局(有child属性的，摆放 child ) 
 -  [Row、Column和Stack](/doc/widgetdocs/Row、Column和Stack.md)
 -  [Container](/doc/widgetdocs/Container.md)
 ## 2. 控件学习

@@ -11,6 +11,7 @@ import './demo/RadioDemo.dart';
 import './demo/SwitchDemo.dart';
 import './demo/ContainerDemo.dart';
 import './demo/LayoutDemo.dart';
+import './demo/CenterDemo.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 //      home: TextDemo(),
-      home: ContainerDemo(),
+      home: CenterDemo(),
     );
   }
 }
